@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>SearchMe</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">Search Me , a Wikipedia pwered search engine !</h1>
+      <section class="searchentry">
+        <h2 class="offscreen">Search term entry !!</h2>
+        <div class="logo" aria-hidden="true">SearchMe!!</div>
+        <form action="" id="searchBar" class="searchBar">
+          <label for="search" class="offscreen">Enter a search term .. </label>
+          <input type="text" class="search" autocomplete="off" />
+          <div
+            class="clear"
+            class="none button clear"
+            role="button"
+            tabindex="0"
+            aria-label="Clear search terms"
+          >
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <button
+            id="searchButton"
+            class="button searchButton"
+            type="submit"
+            aria-label="Submit button"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </section>
+      <section class="result">
+        <h2 class="offscreen">Search results</h2>
+        <div class="statsBar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+        </div>
+        <div id="searchResults" class="searchResults">
+          <div class="resultItem">
+            <div class="resultTitle">
+              <a href="">Example</a>
+            </div>
+            <div class="resultContent">
+              <div class="resultImage">
+                <img src="" alt="Example" />
+              </div>
+              <div class="resultText">
+                <p class="resultDesc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  delectus in maxime? Accusantium
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span aria-hidden="true">&lt;&lt;</span> Powered by
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+        <span aria-hidden="true">&gt;&gt;</span>
+      </p>
+    </footer>
+  </body>
+</html>
