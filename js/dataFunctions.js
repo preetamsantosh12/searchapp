@@ -31,9 +31,9 @@ const getMaxChars = () => {
   return maxChars;
 };
 
-const requestData = async (SearchString) => {
+const requestData = async (wikiSearchString) => {
   try {
-    const res = await fetch(SearchString);
+    const res = await fetch(wikiSearchString);
     const data = await res.json();
     return data;
   } catch (err) {
@@ -54,7 +54,7 @@ const processWikiResults = (results) => {
       id: id,
       title: title,
       img: img,
-      text: text,
+      text: text
     };
     resultArray.push(item);
   });

@@ -52,7 +52,7 @@ const processTheSearch = async () => {
   clearStatsLine();
   const searchTerm = getSearchTerm();
   if (searchTerm === "") return;
-  const resultArray = await retrieveSearchResults(SearchTerm);
+  const resultArray = await retrieveSearchResults(searchTerm);
   if (resultArray.length) buildSearchResults(resultArray); //build search results, DONE
   //set stats line, DONE
   setStatsLine(resultArray.length);

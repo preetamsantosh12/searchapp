@@ -7,9 +7,9 @@ export const deleteSearchResults = () => {
 	}
 };
 
-export const buildSearchResults = (resrultArray) => {
-  resrultArray.forEach((result) => {
-    const resultIteml = createResultItem(result);
+export const buildSearchResults = (resultArray) => {
+  resultArray.forEach((result) => {
+    const resultItem = createResultItem(result);
     const resultContents = document.createElement("div");
     resultContents.classList.add("resultContents");
     if (result.img) {
@@ -52,7 +52,7 @@ const createResultText = (result) => {
   const resultText = document.createElement("div");
   resultText.classList.add("resultText");
   const resultDescription = document.createElement("div");
-  resultDescription.classList.add("resultDesc");
+  resultDescription.classList.add("resultDescription");
   resultDescription.textContent = result.text;
   resultText.append(resultDescription);
   return resultText;
