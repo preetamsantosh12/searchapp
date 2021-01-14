@@ -32,7 +32,7 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  min-height: calc(100vh-60px);
+  min-height: calc(100vh - 60px);
 }
 
 footer {
@@ -51,7 +51,7 @@ footer p {
 
 @media only screen and (min-width: 768px) {
   footer p {
-    font-size: 1 rem;
+    font-size: 1rem;
   }
 }
 

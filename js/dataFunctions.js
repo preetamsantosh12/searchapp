@@ -10,7 +10,7 @@ export const retrieveSearchResults = async (searchTerm) => {
   const wikiSearchResults = await requestData(wikiSearchString);
   let resultArray = [];
   if (wikiSearchResults.hasOwnProperty("query")) {
-    resultsArray = processWikiResult(wikiSearchResult.query.pages);
+    resultArray = processWikiResult(wikiSearchResults.query.pages);
   }
   return resultArray;
 };
@@ -41,7 +41,7 @@ const requestData = async (wikiSearchString) => {
   }
 };
 
-const processWikiResults = (results) => {
+const processWikiResult = (results) => {
   const resultArray = [];
   Object.keys(results).forEach((key) => {
     const id = key;
