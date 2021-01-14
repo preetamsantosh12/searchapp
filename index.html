@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="sass/style.css" />
     <title>SearchMe</title>
+    <script src="./js/main.js" type="module "></script>
   </head>
   <body>
     <main>
@@ -37,13 +38,13 @@
           <label for="search" class="offscreen">Enter a search term .. </label>
           <input type="text" class="search" autocomplete="off" />
           <div
-            class="clear"
+            id="clear"
             class="none button clear"
             role="button"
             tabindex="0"
             aria-label="Clear search terms"
           >
-            <i class="fas fa-times-circle"></i>
+            <i class="fas fa-times-circle blue"></i>
           </div>
           <button
             id="searchButton"
@@ -51,7 +52,7 @@
             type="submit"
             aria-label="Submit button"
           >
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search yellow"></i>
           </button>
         </form>
       </section>
@@ -67,12 +68,12 @@
             </div>
             <div class="resultContent">
               <div class="resultImage">
-                <img src="" alt="Example" />
+                <img src="" alt="Alt-Img" />
               </div>
               <div class="resultText">
                 <p class="resultDesc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  delectus in maxime? Accusantium
+                  delectus in maxime? Accusantium Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia laboriosam consectetur aliquam sed cum eum nam explicabo aspernatur ad, quidem esse delectus cupiditate rerum asperiores saepe! Excepturi, alias aperiam?
                 </p>
               </div>
             </div>
